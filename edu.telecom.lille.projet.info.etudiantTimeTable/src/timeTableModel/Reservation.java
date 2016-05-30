@@ -13,30 +13,31 @@ package timeTableModel;
  * @author gbarois
  */
 public class Reservation {
+		
 	/**
 	 * Description of the property LoginProf.
 	 */
-	public int LoginProf = 0;
+	private string LoginProf = 0;
 
 	/**
 	 * Description of the property NumeroResa.
 	 */
-	public int NumeroResa = 0;
+	private int NumeroResa = 0;
 
 	/**
 	 * Description of the property DateDebut.
 	 */
-	public int DateDebut = 0;
+	private int DateDebut = 0;
 
 	/**
 	 * Description of the property SalleID.
 	 */
-	public int SalleID = 0;
+	private int SalleID = 0;
 
 	/**
 	 * Description of the property salles.
 	 */
-	public HashSet<Salle> salles = new HashSet<Salle>();
+	public Salle salles = new Salle();
 
 	/**
 	 * Description of the property DateFin.
@@ -46,7 +47,7 @@ public class Reservation {
 	/**
 	 * Description of the property timeTables.
 	 */
-	public HashSet<TimeTable> timeTables = new HashSet<TimeTable>();
+	public TimeTable timeTables = new TimeTable();
 
 	// Start of user code (user defined attributes for Reservation)
 
@@ -123,7 +124,7 @@ public class Reservation {
 	 * Returns salles.
 	 * @return salles 
 	 */
-	public HashSet<Salle> getSalles() {
+	public Salle getSalles() {
 		return this.salles;
 	}
 
@@ -147,7 +148,7 @@ public class Reservation {
 	 * Returns timeTables.
 	 * @return timeTables 
 	 */
-	public HashSet<TimeTable> getTimeTables() {
+	public TimeTable getTimeTables() {
 		return this.timeTables;
 	}
 

@@ -13,20 +13,21 @@ package timeTableModel;
  * @author gbarois
  */
 public class Salle {
+	
 	/**
 	 * Description of the property NbPlaces.
 	 */
-	public int NbPlaces = 0;
+	private int NbPlaces = 0;
 
 	/**
 	 * Description of the property timeTableDBs.
 	 */
-	public HashSet<TimeTableDB> timeTableDBs = new HashSet<TimeTableDB>();
+	public TimeTableDB timeTableDBs = new TimeTableDB();
 
 	/**
 	 * Description of the property SalleID.
 	 */
-	public int SalleID = 0;
+	private int SalleID = 0;
 
 	// Start of user code (user defined attributes for Salle)
 
@@ -55,7 +56,7 @@ public class Salle {
 	 * Returns timeTableDBs.
 	 * @return timeTableDBs 
 	 */
-	public HashSet<TimeTableDB> getTimeTableDBs() {
+	public TimeTableDB getTimeTableDBs() {
 		return this.timeTableDBs;
 	}
 

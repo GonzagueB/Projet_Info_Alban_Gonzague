@@ -16,6 +16,9 @@ public class TimeTable {
 	/**
 	 * Description of the property timeTableDBs.
 	 */
+	
+	ArrayList<Reservation> listReservation = new listArray<Reservation>;
+	
 	public HashSet<TimeTableDB> timeTableDBs = new HashSet<TimeTableDB>();
 
 	/**
@@ -68,7 +71,7 @@ public class TimeTable {
 	 * Returns timeTableDBs.
 	 * @return timeTableDBs 
 	 */
-	public HashSet<TimeTableDB> getTimeTableDBs() {
+	public TimeTableDB getTimeTableDBs() {
 		return this.timeTableDBs;
 	}
 
